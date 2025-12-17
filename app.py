@@ -104,7 +104,7 @@ if st.button("🎯 Tampilkan Rekomendasi"):
         st.warning("User ID tidak ditemukan atau belum memiliki cukup data.")
     else:
         st.subheader(f"📌 Top-{top_n} Rekomendasi Film")
-        st.dataframe(result.reset_index(drop=True), use_container_width=True)
+        st.dataframe(result.reset_index(drop=True), width="stretch")
 
 # ===============================
 # FOOTER
